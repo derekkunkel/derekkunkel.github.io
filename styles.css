@@ -11,8 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    width: 100%;
-    min-width: 100%;
 }
 
 header {
@@ -25,32 +23,65 @@ header {
     display: flex;
     flex: 1;
     flex-direction: column;
-    
 }
 
 .headshot-background {
     display: flex;
     justify-content: center;
-    padding: 2em;
+    padding: 1em;
     
     background: 
     /*a triangle shape offset by 50px from the top taking 25% of the height*/
-    linear-gradient(to bottom right,transparent 49.8%,#109fbc 51%) 0 50px/100% 25%,
     /*fill the remaining (75% - 50px) with solid color*/
-    linear-gradient(#109fbc,#109fbc) bottom/100% calc(75% - 49px);
+    linear-gradient(#109fbc,#109fbc) top/100% calc(25%),
+    linear-gradient(to top left,transparent 50%,#109fbc 50.4%) 0 50px/120% 75%;
     background-repeat: no-repeat;
 }
 
 #head-shot-top {
-    max-width: 15em;
-    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.6);
+    min-width: 12em;
+    max-width: 15%;
+    box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
 }
 
 .header-container h1 {
     font-family: 'Playfair Display';
+    font-size: 2.5em;
     font-weight: 800;
 }
 
+.header-links {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.header-link-icons {
+    height: 40px;
+    width: 40px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+#header-github-icon {
+    filter: invert();
+}
+
+#header-github-icon:hover {
+    filter: invert(50%) sepia(94%) saturate(415%) hue-rotate(142deg) brightness(86%) contrast(97%);
+}
+
+#header-linked-in-icon {
+    transform: scale(1.3);
+}
+
+#header-linked-in-icon:hover {
+    filter: invert(50%) sepia(94%) saturate(415%) hue-rotate(142deg) brightness(86%) contrast(97%);
+}
+
+.header-container p {
+    font-size: 1em;
+}
 
 #about-me {
     display: flex;
@@ -60,6 +91,7 @@ header {
 
 #about-me h2 {
     font-family: 'Playfair Display';
+    font-size: 1.7em;
     font-weight: 800;
 }
 
@@ -74,10 +106,9 @@ header {
 }
 
 .project-container-title {
-    justify-content: center;
-
+    font-size: 1.7em;
     font-family: 'Playfair Display';
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .project-card-container {
@@ -92,28 +123,24 @@ header {
     flex-direction: column;
     padding: 0em 2em;
 
-    font-weight: 800;
+    font-weight: bold;
 
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .project-title {
+    font-size: 1.5em;
+    font-weight: 800;
     text-decoration: none;
     color: black;
+    padding-top: 0.5em;
 }
 
 .project-title:hover {
-    transform: scale(1.1);
+    color: #109fbc;
 }
 
-.project-title {
-    font-size: 16px;
-    font-weight: 800;
-    text-decoration: none;
-
-    padding-top: 0.5em;
-}
 
 .project-description {
     font-size: 0.9em;
@@ -129,12 +156,14 @@ header {
 }
 
 .project-card-icons img{
-    height: 1.2em;
-    width: 1.2em;
+    height: 1.4em;
+    width: 1.4em;
 }
 
 .project-card-icons img:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
+    transition-duration: 0.06s;
+    filter: invert(50%) sepia(94%) saturate(415%) hue-rotate(142deg) brightness(86%) contrast(97%);
 }
 
 
@@ -157,7 +186,7 @@ header {
 }
 
 .contact-container p {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #email {
@@ -170,7 +199,7 @@ header {
     font-weight: bold;
 }
 
-.links {
+.bottom-links {
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -184,36 +213,30 @@ header {
     padding: 1.3em;
 }
 
-
-#github-icon:hover {
+#contact-github-icon:hover {
     transition-duration: 0.06s;
     filter: invert();
 }
 
-#linked-in-icon {
-    transform: scale(1.25);
+#contact-linked-in-icon {
+    transform: scale(1.20);
     transition-duration: 0.06s;
     filter: invert();
 }
 
-#linked-in-icon:hover {
+#contact-linked-in-icon:hover {
     transition-duration: 0.06s;
     filter: none;
 }
 
-
-
-
 #headshot2 {
-    max-width: 20rem;
-    box-shadow: 0em 0em 0.65em rgba(0, 0, 0, 0.6);
+    max-width: 12em;
+    box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
 }
 
 
-
-
-
 @media screen and (min-width: 600px) {
+    
     #projects {
         justify-items: center;
     }
@@ -231,11 +254,16 @@ header {
         grid-template-columns: 1fr;
         justify-items: center;
     }
+
+    #headshot2 {
+        max-width: 15em;
+        box-shadow: 0em 0em 0.65em rgba(0, 0, 0, 0.6);
+    }
 }
 
 
-
 @media screen and (min-width: 800px) {
+
     #projects {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -258,11 +286,22 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+
+    #header-github-icon:hover {
+        transform: scale(1.15);
+        transition-duration: 0.06s;
+    }
+    
+    #header-linked-in-icon:hover {
+        transform: scale(1.45);
+        transition-duration: 0.06s;
+    }
+
+
     #projects {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    
 
     .project-card-container {
         display: grid;
