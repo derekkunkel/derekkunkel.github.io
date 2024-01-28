@@ -1,2 +1,2 @@
 # porfolio
-Portfolio of code done throughout and after my colmputer science degree.
+Portfolio of code/projects done throughout and after my computer science degree.
