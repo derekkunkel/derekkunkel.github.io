@@ -1,0 +1,6 @@
+- screenshot with description underneath
+- milestone reports 2, 3, and 4
+--> indicate which report has the low-fidelity prototype
+- link to google questionairre
+- iframe with figma project in it
+- walkthrough video

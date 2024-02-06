@@ -12,21 +12,17 @@
     <header>
         <div class="header-container">
             <div class="headshot-background">
-                <img id="head-shot-top" src="img/headshots/headshot.jpg" alt="A photo of Derek Kunkel, a kind and vivacious-looking individual with a mediocre haircut and great smile">
+                <img id="head-shot-top" src="img/headshots/headshot.jpg" alt="A photo of the ">
             </div>
             <h1>Derek Kunkel</h1>
             <div class="header-links">
+                <a href="https://www.linkedin.com/in/derek-kunkel"><img id="header-linked-in-icon" class="header-link-icons" src="img/icons/linkedin.svg" alt="Linked-In Link"></a>
                 <a href="https://github.com/derekkunkel"><img id="header-github-icon" class="header-link-icons" src="img/icons/github-mark-white.svg" alt="Github Link"></a>
-                <a href=""><img id="header-linked-in-icon" class="header-link-icons" src="img/icons/linkedin.svg" alt="Linked-In Link"></a>
             </div>
-            <p>Computer Science and Technology Enthusiast.<br>
-                Second-Rate Musician.<br>
-                Deer Whisperer.
-            </p>
         </div>
     </header>
 
-    <section id="about-me">
+    <section class="about-me">
         <div class="about-me-container">
             <h2>About Me</h2>
             <p>
@@ -38,47 +34,47 @@
     <section class="projects">
         <h2 class="project-container-title">Projects</h2>
         <div class="project-card-container">
-            <div class="project-card">
+            <div id="react-motel-app-card" class="project-card">
                 <a href="react_motel_app/react-motel-app.html">
                     <img class="project-screenshot" src="img//project-screenshots/TwiliteMotel.jpg" alt="React Motel Management App">
                     <div class="project-title">React Motel Management App</div>
                 </a>
                 <div class="project-card-icons">
-                    <a href="react_motel_app/react-motel-app.html" target="_blank" rel="noopener noreferrer"><img class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
+                    <a href="react_motel_app/react-motel-app.html" target="_blank" rel="noopener noreferrer"><img id="project-open-new-icon" class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
                     <a href="https://github.com/derekkunkel/react-motel-mgmt-app" target="_blank" rel="noopener noreferrer"><img id="project-github-icon" class="project-icon" src="img/icons/github-mark-white.svg" alt="Github Link"></a>
                 </div>
-                <p class="project-description">A dockerized motel management web app utilizing React and MUI for the frontend, Node/Express for the backend, MySQL for the database, and Auth0 for authorization and account creation.</p>
+                <p class="project-description">A full-stack, dockerized motel management web app utilizing React and MUI for the frontend, Node/Express for the backend, MySQL for the database, and Auth0 for authorization and account creation.</p>
             </div>
-            <div class="project-card">
+            <div id="sorghum-classifier-card" class="project-card">
                 <a href="sorghum_image_classifier/sorghum-image-classifier.html">
                     <img class="project-screenshot" src="img//project-screenshots/TERRA-REF-Scanner.jpg" alt="Github Link">
-                    <div class="project-title">Sorghum Crop Image Classifier</div>
+                    <div class="project-title">Sorghum Cultivar Image Classifier</div>
                 </a>
                 <div class="project-card-icons">
-                    <a href="project2.html" target="_blank" rel="noopener noreferrer"><img class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
+                    <a href="project2.html" target="_blank" rel="noopener noreferrer"><img id="project-open-new-icon" class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
                     <a href="https://github.com/derekkunkel/sorghum-image-classifier" target="_blank" rel="noopener noreferrer"><img id="project-github-icon" class="project-icon" src="img/icons/github-mark-white.svg" alt="Github Link"></a>
                 </div>
-                <p class="project-description">A LeNet deep learning model for classifying images of sorghum plants trained on the Sorghum-100 dataset, serving as a baseline of performance in comparison with more sophisticated CNNs. The model was created using the Keras API for TensorFlow, and implements data augmentation using flips, rotations, and zoom.</p>
+                <p class="project-description">A LeNet deep learning model created using the Keras API for TensorFlow to classify images of sorghum plants trained on the Sorghum-100 dataset.</p>
             </div>
-            <div class="project-card">
+            <div id="whole-node-card" class="project-card">
                 <a href="whole_node/whole-node.html">
                     <img class="project-screenshot" src="img//project-screenshots/whole_node_3.png" alt="Github Link">
-                    <div class="project-title">Version Controlled Songwriting App GUI</div>
+                    <div class="project-title">Songwriting App GUI</div>
                 </a>
                 <div class="project-card-icons">
-                    <a href="project3.html" target="_blank" rel="noopener noreferrer"><img class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
+                    <a href="project3.html" target="_blank" rel="noopener noreferrer"><img id="project-open-new-icon" class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
                     <!-- <a href="" target="_blank" rel="noopener noreferrer"><img id="project-github-icon" class="project-icon" src="img/icons/github-mark-white.svg" alt="Github Link"></a> -->
-                    <a href="" target="_blank" rel="noopener noreferrer"><img id="project-figma-icon" src="img/icons/figma-small-icon.png" alt="Figma Link"></a>
+                    <a href="https://www.figma.com/file/7FxOkLBVkF0C1bJ53imxw9/Whole-Node?type=design&node-id=109%3A1592&mode=design&t=7GjaOu4jVTGlKg6X-1" target="_blank" rel="noopener noreferrer"><img id="project-figma-icon" src="img/icons/figma-small-icon.png" alt="Figma Link"></a>
                 </div>
-                <p class="project-description">A medium-fidelity prototype created in Figma of a UI for a version-controlled songwriter’s assistant.</p>
+                <p class="project-description">A medium-fidelity UI prototype created in Figma for a version-controlled songwriter’s assistant.</p>
             </div>
-            <div class="project-card">
+            <div id="odin-project-card" class="project-card">
                 <a href="odin_project/odin-project.html">
                     <img class="project-screenshot" src="img//project-screenshots/the_odin_project_2.png" alt="Github Link">
                     <div class="project-title">Odin Project Coursework</div>
                 </a>
                 <div class="project-card-icons">
-                    <a href="project4.html" target="_blank" rel="noopener noreferrer"><img class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
+                    <a href="project4.html" target="_blank" rel="noopener noreferrer"><img id="project-open-new-icon" class="project-icon" src="img/icons/open-in-new.svg" alt="Open Project"></a>
                     <a href="" target="_blank" rel="noopener noreferrer"><img id="project-github-icon" class="project-icon" src="img/icons/github-mark-white.svg" alt="Github Link"></a>
                 </div>
                 <p class="project-description">Various HTML/CSS pages made as part of coursework for The Odin Project, a full stack development course.</p>
@@ -95,9 +91,9 @@
             <a id="email" href="mailto:derekkunkel@gmail.com">derekkunkel@gmail.com</a>
             <div class="bottom-links">
                 <a href="https://github.com/derekkunkel"><img id="contact-github-icon" class="contact-link-icons" src="img/icons/github-mark-white.svg" alt="Github Link"></a>
-                <a href=""><img id="contact-linked-in-icon" class="contact-link-icons" src="img/icons/linkedin.svg" alt="Linked-In Link"></a>
+                <a href="www.linkedin.com/in/derek-kunkel"><img id="contact-linked-in-icon" class="contact-link-icons" src="img/icons/linkedin.svg" alt="Linked-In Link"></a>
             </div>
-            <img id="headshot2" src="img/headshots/headshot2.jpg">
+            <img id="head-shot-bottom" src="img/headshots/headshot2.jpg">
         </div>
     </section>
 </body>

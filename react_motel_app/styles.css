@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto', 'Playfair Display', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: top 30% #7BC78F ;
+}
+
+.back-link {
+    display: flex;
+    gap: 0.5em;
+    position: absolute;
+    left: 1.5em;
+    top: 0.5em;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.back-link:hover {
+    filter: invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
+}
+
+.back-link img {
+    height: 45px;
+    width: 45px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.screenshot-background {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background: 
+    linear-gradient(#6B9EAA,#6B9EAA) top/100% calc(25%),
+    linear-gradient(to top left,transparent 50%,#6B9EAA 50.4%) 0 50px/120% 75%;
+    background-repeat: no-repeat;
+}
+
+.header-container span {
+    font-size: small;
+    font-style: italic;
+}
+
+#project-screenshot {
+    min-width: 15em;
+    max-width: 27em;
+    box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
+    border-radius: 8px;
+}
+
+.header-container h1 {
+    font-family: 'Playfair Display';
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.header-links a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.header-link-icons {
+    height: 45px;
+    width: 45px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+#header-github-icon {
+    filter: invert();
+}
+
+#header-github-icon:hover{
+    filter: brightness(0) saturate(100%) invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
+}
+
+#header-pdf-icon {
+    transform: scale(1.3);
+}
+
+#header-pdf-icon:hover {
+    filter: invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
+}
+
+.project-title {
+    display: none;
+    font-family: 'Playfair Display';
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.project-description{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1em;
+    padding: 0 3em;
+}
+
+.product-demonstration {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.product-demonstration iframe {
+    max-height: 20em;
+}
+
+
+@media screen and (min-width: 200px) {
+
+    .back-link {
+        display: none;
+    }
+
+    .project-description {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0 4em;
+        font-size: 1.05em;
+    }
+
+    #header-github-icon:hover {
+        transform: scale(1);
+    }
+    
+    .product-demonstration iframe {
+        max-height: 20em;
+    }
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .back-link {
+        display: flex;
+        gap: 0.5em;
+        position: absolute;
+        left: 1.5em;
+        top: 0.5em;
+        align-items: center;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: black;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .back-link {
+        font-size: 1em;
+    }
+
+    .project-description {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0 30%;
+        font-size: 1.05em;
+    }
+
+    #header-github-icon:hover {
+        transform: scale(1.15);
+        transition-duration: 0.06s;
+    }
+}

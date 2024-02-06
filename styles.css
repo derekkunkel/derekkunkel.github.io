@@ -31,20 +31,21 @@ header {
     justify-content: center;
     padding: 1em;
     background: 
-    linear-gradient(#109fbc,#109fbc) top/100% calc(25%),
-    linear-gradient(to top left,transparent 50%,#109fbc 50.4%) 0 50px/120% 75%;
+    linear-gradient(#0A6072,#0A6072) top/100% calc(25%),
+    linear-gradient(to top left,transparent 50%,#0A6072 50.4%) 0 50px/120% 75%;
     background-repeat: no-repeat;
 }
 
 #head-shot-top {
-    min-width: 12em;
-    max-width: 15%;
+    min-width: 10em;
+    max-width: 12%;
     box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
+    border-radius: 8px;
 }
 
 .header-container h1 {
     font-family: 'Playfair Display';
-    font-size: 2.5em;
+    font-size: 2.7em;
     font-weight: 800;
 }
 
@@ -55,40 +56,41 @@ header {
 }
 
 .header-link-icons {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     max-height: 80px;
     max-width: 80px;
-}
-
-#header-github-icon {
-    filter: invert();
-}
-
-#header-github-icon:hover, #header-linked-in-icon:hover {
-    filter: invert(50%) sepia(94%) saturate(415%) hue-rotate(142deg) brightness(86%) contrast(97%);
 }
 
 #header-linked-in-icon {
     transform: scale(1.3);
 }
 
-.header-container p {
-    font-size: 1em;
+#header-linked-in-icon:hover {
+    filter: invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
 }
 
-#about-me {
+#header-github-icon {
+    filter: invert();
+}
+
+#header-github-icon:hover{
+    filter: brightness(0) saturate(100%) invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
+}
+
+.about-me {
     justify-content: center;
     text-align: center;
 }
 
-#about-me h2 {
+.about-me h2 {
     font-family: 'Playfair Display';
     font-size: 1.7em;
     font-weight: 800;
 }
 
-#about-me p {
+.about-me p {
+    font-size: 1.3em;
     padding: 0 3em;
 }
 
@@ -96,7 +98,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* background-color: white; */
+    background-color: white;
 }
 
 .project-container-title {
@@ -116,22 +118,38 @@ header {
 .project-card {
     display: flex;
     flex-direction: column;
-    padding: 0em 2em 0em;
+    padding: 1em 1em 0em;
+    gap: 0.5em;
 
-    font-weight: bold;
-
-    background-color: white;
+    /* background-color: #6B9FAA; */
     border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-.project-card a {
+#react-motel-app-card {
+    background-color: #6B9EAA;
+}
+
+#sorghum-classifier-card {
+    background-color: #7BC78F;
+}
+
+#whole-node-card {
+    background-color: #7A87B7;
+}
+
+#odin-project-card {
+    background-color: #D47C9F;
+}
+
+#project-card a {
     padding: 1em 0em 0em;
-    border: 2px solid white;
+    border: 2px solid #6B9FAA;
 }
-
 
 .project-screenshot {
+    background-color: #6B9FAA;
     width: auto;
     height: 8rem;
     border-radius: 12px;
@@ -139,34 +157,37 @@ header {
 
 .project-title {
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 400;
+    font-weight: bold;
     text-decoration: none;
     color: black;
     padding-top: 0.5em;
 }
 
 .project-title:hover {
-    color: #109fbc;
+    color: #FF9A39;
 }
 
 .project-card-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 1em;
+    padding: 3em 0em 0em;
+    margin-top: 1em;
     gap: 3em;
 }
 
 .project-card-icons img{
-    display: flex;
     height: 1.6em;
     width: 1.6em;
 }
 
 .project-card-icons img:hover {
     transform: scale(1.2);
-    transition-duration: 0.06s;
-    filter: invert(50%) sepia(94%) saturate(415%) hue-rotate(142deg) brightness(86%) contrast(97%);
+}
+
+#project-open-new-icon:hover {
+    filter: invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
 }
 
 #project-github-icon {
@@ -174,22 +195,26 @@ header {
 }
 
 #project-github-icon:hover {
-    filter: invert(50%) sepia(94%) saturate(415%) hue-rotate(142deg) brightness(86%) contrast(97%);
+    filter: brightness(0) saturate(100%) invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
 }
 
 #project-figma-icon {
     scale: 1.3;
 }
 
-.project-figma-icon:hover {
-    scale: 1.6;
-    filter: none;
+#project-figma-icon:hover {
+    scale: 1.3;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
+    transition-duration: 0.06s;
 }
 
 .project-description {
-    font-size: 1.1em;
-    /* font-weight: 400; */
+    padding: 0 2em 0;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
     text-align: justify;
+    line-height: 1.4em;
 }
 
 #contact-me {
@@ -200,7 +225,7 @@ header {
     padding: 1em;
 
     color: black;
-    background-color: #109fbc;
+    background-color: #0A6072;
     display: flex;
     flex: 1;
 }
@@ -208,24 +233,28 @@ header {
 .contact-container h2 {
     font-family: 'Playfair Display';
     font-size: 2em;
+    color: white;
 }
 
 .contact-container p {
+    color: white;
     font-size: 1.2em;
+    margin-bottom: 1.5em;
 }
 
 #email {
-    color: black;
-    font-weight: bold;
-    font-size: 1.1em;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 1.2em;
+    font-family: 'Playfair Display';
 }
 
 #email:hover {
-    color: white;
-    font-weight: bold;
+    color: #FF9A39;
 }
 
 .bottom-links {
+    margin-top: 0em;
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -239,35 +268,35 @@ header {
     padding: 1.3em;
 }
 
-#contact-github-icon {
-    transition-duration: 0.06s;
-    filter: invert();
-}
-
 #contact-github-icon:hover {
-    filter: none;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
 }
 
 #contact-linked-in-icon {
     transform: scale(1.20);
-    transition-duration: 0.06s;
+    filter: invert();
 }
 
 #contact-linked-in-icon:hover {
-    transform: scale(1.4);
-    filter: invert();
-    transition-duration: 0.06s;
+    transform: scale(1.5);
+    filter: invert(83%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
 }
 
-#headshot2 {
+#head-shot-bottom {
     max-width: 12em;
+    border-radius: 8px;
     box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
 }
 
 
 @media screen and (min-width: 200px) {
 
-    #about-me {
+    #head-shot-top {
+        min-width: 14em;
+        max-width: 15em;
+    }
+
+    .about-me {
         grid-template-columns: 1fr;
         justify-items: center;
     }
@@ -285,24 +314,30 @@ header {
         justify-content: center;
     }
 
-    .project-description {
-        font-size: 1.0em;
-        /* font-weight: 400; */
-        text-align: justify;
-        padding-bottom: 1em;
+    .project-title {
+        font-size: 1.5em;
     }
 
-    .contact-container {
+    .project-description {
+        padding: 0 2em 0;
+        color: black;
+        font-size: 1.1em;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.4em;
+    }
 
+    #contact-linked-in-icon:hover {
+        transform: scale(1.2);
     }
 
     .bottom-links {
         padding: 1em 0em;
     }
 
-    #headshot2 {
-        max-width: 15em;
-        box-shadow: 0em 0em 0.65em rgba(0, 0, 0, 0.6);
+    #head-shot-bottom {
+        min-width: 17em;
+        box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
     }
 }
 
@@ -316,6 +351,11 @@ header {
         justify-items: center;
     }
 
+    .about-me {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
     .project-card-icons {
         display: none;
     }
@@ -324,10 +364,6 @@ header {
         display: none;
     }
 
-    #about-me {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
 }
 
 
@@ -343,10 +379,26 @@ header {
         transition-duration: 0.06s;
     }
 
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .about-me h2 {
+        font-family: 'Playfair Display';
+        font-size: 2em;
+        font-weight: 800;
+    }
+
     #projects {
         display: flex;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+
+    .project-container-title{
+        font-size: 2em;
     }
 
     .project-card-container {
@@ -354,27 +406,32 @@ header {
         margin: 0 10%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
-        gap: 2rem;
+        gap: 3em;
+    }
+
+    .project-title {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-align: center;
     }
 
     .project-card-icons {
         display: flex;
         justify-content: center;
+        padding: 0;
     }
 
-    .project-card-icons img {
+    .project-card-icons img{
         display: flex;
+        height: 36px;
+        width: 36px;
     }
 
     .project-description {
-        font-size: 1.1em;
-        /* font-weight: 400; */
-    }
-
-    #about-me {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
+        font-size: 1.2em;
+        font-weight: 800;
+        text-align: center;
+        padding: 0em 1.5em 0.25em;
     }
 
     #contact-github-icon:hover {
@@ -386,5 +443,4 @@ header {
         transform: scale(1.40);
         transition-duration: 0.06s;
     }
-
 }

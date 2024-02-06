@@ -4,26 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
+    <title>React Motel Management Web App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <a href="index.html">Back to Portfolio</a>
+        <div class="header-container">
+            <a class="back-link" href="../index.html"><img id="header-back-icon" src="../img/icons/keyboard-backspace.svg" alt="Return to Main Portfolio Page">Back to Portfolio</a>
+            <div class="screenshot-background">
+               <img id="project-screenshot" src="../img/project-screenshots/TwiliteMotel.jpg" alt="A photo of Derek Kunkel, a kind and vivacious-looking individual with a mediocre haircut and great smile">
+             </div>
+             <span>An image of the Twilite Motel, located in beautiful Prince Albert, Saskatchewan</span>
+            <h1>React Motel Management</h1>
+            <div class="header-links">
+                <a href="https://github.com/derekkunkel/react-motel-mgmt-app"><img id="header-github-icon" class="header-link-icons" src="../img/icons/github-mark-white.svg" alt="Github Link">Github</a>
+            </div>
         </div>
     </header>
 
-    <section>
-        <div class="container">
-            <h2>Project 1</h2>
-            <p>Details of Project 1.</p>
-            <!-- Add more content related to Project 1 -->
+    <section class="project">
+        <div class="project-description-container">
+            <h2 class="project-title">Project Description</h2>
+            <p class="project-description">
+                This web app was the term project of my software engineering class, and was made to manage operations for the Twilite Motel, located in beautiful Prince Albert, Saskatchewan. The business did all booking, registration, and scheduling manually using paper logbooks and records, and wanted to implement a digital solution to save time, decrease manual labor, and automate recordkeeping. To meet these requirements, we developed a full-stack, dockerized web app using React and MUI for the frontend, Node/Express for the backend, MySQL for the database, and Auth0 for authorization and account creation.
+                <br><br>Functionalities we developed include manager, employee, and customer account creation with varying levels of access according to account type, room reservation both online as a customer and from the front desk as an employee, and employee shift scheduling. Our team of 5 employed a Scrum development methodology, asynchronously tracking all epics, stories, tasks, and bugs in Jira, as well as observing thrice-weekly stand-up meetings.
+                <br><br>While recent changes Auth0 made to the free version of their service prevent the app from being used in its current condition, a product installation guide and feature demo was created which can be viewed below, and the project code can be viewed at the github link above.
+            </p>
+        </div>
+        <div class="product-demonstration">
+            <iframe src="https://drive.google.com/file/d/1RUY6ys1X44hkzCcMuN9sl_ajh_dff8l1/preview" width="640" height="480" allow="autoplay"></iframe>
         </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
