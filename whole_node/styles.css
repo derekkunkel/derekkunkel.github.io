@@ -169,17 +169,12 @@ header {
     background: #7A87B7;
     color: #FF9A39;
   }
-  
-  @media (min-width: 200px) {
-    .label {
-      width: auto;
-    }
-  }
 
   .panel {
     display: none;
     padding: 20px 30px 30px;
     background: white;
+    min-height: 25em;
   }
 
   .panel h1 {
@@ -190,29 +185,11 @@ header {
     text-align: justify;
   }
   
-  @media (min-width: 200px) {
-
-    .tabs {
-        padding: 3em 0em;
-    }
-    
-    .panel {
-        order: 99;
-    }
-
-    .panel iframe {
-        justify-content: center;
-        justify-self: center;
-        max-width: 25em;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-  }
-  
   .input:checked + .label + .panel {
     display: block;
   }
+
+  
 
 
 @media screen and (min-width: 200px) {
@@ -241,7 +218,7 @@ header {
         display: flex;
         justify-content: center;
         padding: 2em 0em;
-        gap: 3em;
+        gap: 4em;
     }
     
     .header-links a {
@@ -260,6 +237,26 @@ header {
     .header-container h1 {
         font-size: 1.2em;
     }
+
+
+    .tabs {
+        text-align: center;
+        padding: 3em 0em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .panel {
+        order: 99;
+    }
+
+    .panel iframe {
+        justify-content: center;
+        justify-self: center;
+        max-width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -275,6 +272,26 @@ header {
         font-weight: bold;
         color: black;
     }
+
+    .header-container h1 {
+        font-size: 1.4em;
+    }
+
+    .label {
+        width: auto;
+      }
+
+    .tabs {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .panel iframe {
+        min-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      
 }
 
 
@@ -312,17 +329,6 @@ header {
     #header-pdf-icon:hover {
         transform: scale(1.45);
         transition-duration: 0.06s;
-    }
-
-    .tabs {
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-    .panel iframe {
-        min-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
 }
