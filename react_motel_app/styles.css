@@ -158,10 +158,6 @@ header {
     #header-github-icon:hover {
         transform: scale(1);
     }
-    
-    .product-demonstration iframe {
-        max-height: 20em;
-    }
 
 }
 

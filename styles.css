@@ -52,7 +52,20 @@ header {
 .header-links {
     display: flex;
     justify-content: center;
-    gap: 3em;
+    padding: 2em 0em;
+}
+
+.header-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -2em;
+
+    gap: 0.5em;
+
+    width: 12em;
+    font-weight: bold;
+    color: black;
 }
 
 .header-link-icons {
@@ -76,6 +89,15 @@ header {
 
 #header-github-icon:hover{
     filter: brightness(0) saturate(100%) invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
+}
+
+#header-resume-pdf-icon {
+    transform: scale(1.3);
+}
+
+#header-resume-pdf-icon:hover {
+    transform: scale(1.5);
+    filter: invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
 }
 
 .about-me {
@@ -331,6 +353,10 @@ header {
         transform: scale(1.2);
     }
 
+    #header-resume-pdf-icon:hover {
+        transform: scale(1.3);
+    }
+
     .bottom-links {
         padding: 1em 0em;
     }
@@ -377,6 +403,15 @@ header {
     #header-linked-in-icon:hover {
         transform: scale(1.45);
         transition-duration: 0.06s;
+    }
+
+    #header-resume-pdf-icon {
+        transform: scale(1.3);
+    }
+    
+    #header-resume-pdf-icon:hover {
+        transform: scale(1.45);
+        filter: invert(36%) sepia(97%) saturate(868%) hue-rotate(3deg) brightness(94%) contrast(103%);
     }
 
     .about-me {
