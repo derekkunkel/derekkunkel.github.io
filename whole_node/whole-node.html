@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whole Node: Version Controlled Songwriting App UI</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="tabs.js"></script>
 </head>
 
 <body>
@@ -16,59 +15,125 @@
             <div class="screenshot-background">
                <img id="project-screenshot" src="../img/project-screenshots/whole_node_4.png" alt="An image of the TERRA-REF fields in Arizona, with the mobile gantry and imaging platform used to generate the Sorghum-100 dataset">
              </div>
-             <span>A screenshot of the Whole Node UI, depicting how nodes are displayed and interacted with.</span>
-            <h1>Whole Node: Version Controlled Songwriting App UI</h1>
-            <div class="header-links">
-                <a href="./milestones/Milestone2.pdf"><img id="milestone2-pdf-icon" class="header-pdf-icon" src="../img/icons/file-pdf-box.svg" alt="PDF Link">Milestone 2: Low-Fidelity Prototype and Evaluation Without Users</a>
-                <a href="./milestones/Milestone3.pdf"><img id="milestone3-pdf-icon" class="header-pdf-icon" src="../img/icons/file-pdf-box.svg" alt="PDF Link">Milestone 3: Medium-Fidelity Prototype Implementation and Demonstration</a>
-                <a href="./milestones/Milestone4.pdf"><img id="milestone4-pdf-icon" class="header-pdf-icon" src="../img/icons/file-pdf-box.svg" alt="PDF Link">Milestone 4: Evaluation with User Testing and Recommendations</a>
-            </div>
+             <span>A screenshot of the Whole Node UI, created in Figma, depicting how project nodes are displayed and interacted with.</span>
+            <h1>Whole Node: Version-Controlled Songwriting App UI</h1>
         </div>
     </header>
 
     <section class="tabs">
         <input name="tabs" type="radio" id="tab-1" checked="checked" class="input" />
         <label for="tab-1" class="label">Description</label>
-        <div class="panel">
+        <div id="description-panel" class="panel">
             <h1>Project Description</h1>
             <p>
-            The orange (specifically, the sweet orange) is the fruit of the citrus
-            species Citrus × sinensis in the family Rutaceae
-            <br><br>
-            The fruit of the Citrus × sinensis is considered a sweet orange, whereas
-            the fruit of the Citrus × aurantium is considered a bitter orange. The
-            sweet orange reproduces asexually (apomixis through nucellar embryony);
-            varieties of sweet orange arise through mutations.
+                This application UI was the term project for a Human Computer Interaction (UI/UX) class, wherein we specified, designed, prototyped, and evaluated an innovative and novel interface.
+            </p>
+            <p>
+                During the songwriting process, songwriters frequently find themselves with an abundance of song fragments, chord progressions, and other theoretical or aural musical inspirations with no effective means of documenting and organizing these elements.
+                Tracking the progression of a song and documenting how it changes over time is a time-consuming process, requiring writers to continually organize their ever-expanding library of files.
+                Often the user is forced to delete files containing plausible song iterations, or transfer their ideas to a different device, making the comparison of different versions of a given song difficult.
+                Solving this problem would mean a more streamlined process that makes creating music more focused on fun collaboration, rather than spending time organising disparate files into one place.
+            </p>
+            <p>
+                Our solution to this problem is a system that provides version control for songwriters. Our system would use a tree structure to record the development of the project, providing songwriters with easy access to their audio and text files.
+                Additionally, this system would allow users to examine previous versions of their project and track the development of their work.
+                Key features of this system would allow users to record and document all the information of the song at that point in time (lyrics, audio recording, photos/videos of song being played, keyboard settings, etc) for each song iteration.
             </p>
         </div>
 
         <input name="tabs" type="radio" id="tab-2" class="input" />
         <label for="tab-2" class="label">Milestones</label>
-        <div class="panel">
+        <div id="milestone-panel" class="panel">
             <h1>Project Milestones</h1>
-            <p>
-            The tangerine (Citrus tangerina) is an orange-colored citrus fruit that is
-            closely related to, or possibly a type of, mandarin orange (Citrus
-            reticulata).
-            </p>
-            <p>
-            The name was first used for fruit coming from Tangier, Morocco, described
-            as a mandarin variety. Under the Tanaka classification system, Citrus
-            tangerina is considered a separate species.
-            </p>
+            <div class="header-links">
+                <a id="milestone2-link" href="./milestones/Milestone2.pdf"><img class="header-pdf-icon" src="../img/icons/file-pdf-box.svg" alt="PDF Link">Milestone 2</a>
+                <a id="milestone3-link" href="./milestones/Milestone3.pdf"><img class="header-pdf-icon" src="../img/icons/file-pdf-box.svg" alt="PDF Link">Milestone 3</a>
+                <a id="milestone4-link" href="./milestones/Milestone4.pdf"><img class="header-pdf-icon" src="../img/icons/file-pdf-box.svg" alt="PDF Link">Milestone 4</a>
+            </div>
+            <div class="milestone-text">
+                <br>
+                <p id="milestone-pdf-note">
+                    Each milestone was documented in a report, available in the pdf files linked above.
+                </p>
+                <h3 id="milestone-1-title" class="milestone-title">Milestone 1: Application Proposals</h3>
+                <p>
+                    Milestone 1, not included in this portfolio, was a set of proposals for applications to create and test novel interfaces for. Of these, Whole Node was the most popular and original idea.
+                </p>
+                <h3 id="milestone-2-title" class="milestone-title">Milestone 2: Low-Fidelity Prototype and Evaluation Without Users</h3>
+                    <p>
+                        We developed a paper prototype of a Whole Node, mobile application that provides various features to assist songwriters during their songwriting, including: 
+                    </p>
+                    <ul>
+                        <li>
+                            Logging in and account creation
+                        </li>
+                        <li>
+                            Creating text/audio/image/sheet music files (artifacts)
+                        </li>
+                        <li>
+                            Organizing these artifacts into projects
+                        </li>
+                        <li>
+                            Sharing projects with other collaborators
+                        </li>
+                        <li>
+                            Tracking changes in projects and artifacts over time
+                        </li>
+                    </ul>
+                    <p>
+                        We then performed a usability inspection using the heuristic evaluation method, assigned severity ratings to the issues observed, and proposed changes to the prototype based on these issues.
+                    </p>
+                    <p>
+                        The low-fidelity paper prototype and table of heuristic evaluations/proposals can be observed in the report pdf.
+                    </p>
+                <h3 id="milestone-3-title" class="milestone-title">Milestone 3: Medium-Fidelity Prototype and Demonstration</h3>
+                    <p>
+                        Using Figma, we designed a vertical slice medium-fidelity prototype of the Whole Node UI that implemented the improvements proposed from the usability inspection. The goals of the prototype were to:
+                    </p>
+                    <ul>
+                        <li>
+                            Determine if the user has the flexibility required to deposit a creative element into a project without being bogged down by navigation.
+                        </li>
+                        <li>
+                            Determine if versioning and consolidation of creative elements is useful to songwriters.
+                        </li>
+                        <li>
+                            Determine if users prefer one UI representation of a version control tree over another.
+                        </li>
+                    </ul>
+                    <p>
+                        The medium-fidelity prototype can be observed under the "Figma Page" tab above, with a feature showcase available in the "Video Walkthrough" tab.
+                    </p>
+                <h3 id="milestone-4-title" class="milestone-title">Milestone 4: Evaluation with User Testing and Recommendations</h3>
+                    <p>
+                        We followed a multi-pronged approach for user evaluation; combining multiple questionnaires to gather quantitative data regarding user experience with a follow-up interview for the collection of qualitative information.
+                    </p>
+                    <p>
+                        The questionnaires given to users gathered data on their ability to complete tasks, their satisfaction levels, their aesthetic design preferences, and their demographic information.
+                        These followed an “A-B” pattern, wherein a user was given one-of-two interfaces, completed several tasks with it, and answered a questionnaire on their experience using that interface.
+                    </p>
+                    <p>
+                        The user was then given a second, slightly different interface, completed the same task, and answered an additional questionnaire.
+                        These were used to find a favoured implementation. Both questionnaires left a blank section for users to input qualitative insights.
+                    </p>
+                    <p>
+                        The follow-up interviews contained a series of open and close-ended questions, providing the user with an opportunity to provide dynamic feedback and verbalise their experiences using the app beyond the two tasks given.
+                        These interviews were recorded and transcribed to provide additional feedback. The interview questions were weighted towards open-ended, subjective inquiries to gather user insights.
+                    </p>
+            </div>
         </div>
 
         <input name="tabs" type="radio" id="tab-3" class="input" />
         <label for="tab-3" class="label">Video Walkthrough</label>
-        <div class="panel">
+        <div id="walkthrough-panel" class="panel">
             <h1>Medium-Fidelity Prototype Walkthrough</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3UWPEMAf-Rw?si=o7Y8q1ZXoZ0h4NYr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <input name="tabs" type="radio" id="tab-4" class="input" />
-        <label for="tab-4" class="label">Figma Page</label>
-        <div class="panel">
-            <h1>Main UI Figma Page</h1>
+        <label for="tab-4" class="label">Figma UI</label>
+        <div id="figma-panel" class="panel">
+            <h1>Medium-Fidelity Prototype Figma Page</h1>
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7FxOkLBVkF0C1bJ53imxw9%2FWhole-Node%3Ftype%3Ddesign%26node-id%3D109%253A1592%26mode%3Ddesign%26t%3DwzKScrk2DWfPp7Z4-1" allowfullscreen></iframe>
         </div>
     </section>
