@@ -28,11 +28,11 @@ header {
     top: 0.5em;
     align-items: center;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .back-link:hover {
-    filter: invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
+    filter: invert(22%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
 }
 
 .back-link img {
@@ -40,6 +40,7 @@ header {
     width: 45px;
     max-height: 80px;
     max-width: 80px;
+    filter: invert();
 }
 
 .header-container {
@@ -122,12 +123,13 @@ header {
     font-weight: 800;
 }
 
-.project-description{
+.project-description-container p {
     display: flex;
     justify-content: center;
     text-align: justify;
     font-size: 1em;
     padding: 0 3em;
+    line-height: 1.3em;
 }
 
 .links {
@@ -160,12 +162,14 @@ header {
         display: none;
     }
 
-    .project-description {
-        display: grid;
-        grid-template-columns: 1fr;
+    .project-description-container p {
+        display: flex;
         justify-items: center;
-        padding: 0 4em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
         font-size: 1.05em;
+        line-height: 1.3em;
     }
 
     #header-github-icon:hover {
@@ -190,28 +194,17 @@ header {
 
     .back-link {
         display: flex;
-        gap: 0.5em;
-        position: absolute;
-        left: 1.5em;
-        top: 0.5em;
-        align-items: center;
-        font-weight: bold;
-        color: black;
+    }
+
+    .project-description-container p {
+        max-width: 35em;
+        line-height: 1.3em;
     }
 
 }
 
 
 @media screen and (min-width: 1024px) {
-
-
-    .project-description {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 0 30%;
-        font-size: 1.05em;
-    }
 
     #header-github-icon:hover {
         transform: scale(1.15);

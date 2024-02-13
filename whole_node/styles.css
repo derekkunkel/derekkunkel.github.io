@@ -6,6 +6,10 @@
     font-family: 'Roboto', 'Playfair Display', sans-serif;
 }
 
+/* *, ::before, ::after {
+    outline:1px solid red;
+  } */
+
 body {
     display: flex;
     flex-direction: column;
@@ -26,11 +30,11 @@ header {
     top: 0.5em;
     align-items: center;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .back-link:hover {
-    filter: invert(78%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
+    filter: invert(22%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
 }
 
 .back-link img {
@@ -38,6 +42,7 @@ header {
     width: 45px;
     max-height: 80px;
     max-width: 80px;
+    filter: invert();
 }
 
 .header-container {
@@ -93,6 +98,7 @@ header {
 
     font-weight: bold;
     color: black;
+    border: solid black 2px;
 }
 
 .header-pdf-icon {
@@ -198,6 +204,33 @@ header {
     color: #009988;
   }
 
+#figma-panel img {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+#figma-panel p {
+    text-align: center;
+    padding: 0.25em 0;
+}
+
+#figma-panel a {
+    display: flex;
+    justify-content: center;
+    padding: 0.25em 0;
+}
+
+#figma-icon {
+    transform: scale(1.1);
+    border: solid black 1px;
+    border-radius: 8px;
+    box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
+}
+
+#figma-icon:hover {
+    filter: brightness(0%) saturate(0%) invert(72%) sepia(30%) saturate(2515%) hue-rotate(332deg) brightness(102%) contrast(102%);
+    transition: 0.1s, 0.1s;
+}
 
 @media screen and (min-width: 200px) {
 
@@ -231,7 +264,6 @@ header {
         font-size: 1.5em;
         padding: 0 2em;
     }
-
 
     .label {
         text-align: center;
@@ -277,7 +309,8 @@ header {
         font-size: 1em;
         font-weight: normal;
         line-height: 1.3em;
-        text-align: justify;
+        text-align:justify;
+        word-spacing:-2px;
         color: black;
         padding: 0em;
     }
@@ -306,13 +339,7 @@ header {
 
     .back-link {
         display: flex;
-        gap: 0.5em;
-        position: absolute;
-        left: 1.5em;
-        top: 0.5em;
-        align-items: center;
-        font-weight: bold;
-        color: black;
+        color: white;
     }
 
     .header-links {

@@ -4,26 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2</title>
+    <title>Welcome to Derek Kunkel's Portfolio!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <a href="index.html">Back to Portfolio</a>
+        <div class="header-container">
+            <a class="back-link" href="../index.html"><img id="header-back-icon" src="../img/icons/keyboard-backspace.svg" alt="Return to Main Portfolio Page">Back to Portfolio</a>
+            <div class="headshot-background">
+                <img id="head-shot-top" src="../img/project-screenshots/the_odin_project_2.png" alt="Logo for The Odin Project">
+            </div>
+            <h1>The Odin Project</h1>
         </div>
     </header>
 
-    <section>
-        <div class="container">
-            <h2>Project 2</h2>
-            <p>Details of Project 2.</p>
-            <!-- Add more content related to Project 2 -->
+    <section class="projects">
+        <h2 class="project-container-title">Coursework</h2>
+        <div class="project-card-container">
+            <div id="admin-dashboard-card" class="project-card">
+                <a href="./odin-admin-dashboard/index.html">
+                    <div class="project-title">Admin Dashboard</div>
+                </a>
+                <div class="project-card-icons">
+                    <a href="./odin-admin-dashboard/index.html" target="_blank" rel="noopener noreferrer"><img id="project-open-new-icon" class="project-icon" src="../img/icons/open-in-new.svg" alt="Open Project"></a>
+                    <a href="https://github.com/derekkunkel/odin-admin-dashboard" target="_blank" rel="noopener noreferrer"><img id="project-github-icon" class="project-icon" src="../img/icons/github-mark-white.svg" alt="Github Link"></a>
+                </div>
+                <p class="project-description">An admin dashboard made in HTML and CSS, using only the grid display method.</p>
+            </div>
+            <div id="next-project-card" class="project-card">
+                <a href="">
+                    <div class="project-title">The Next Project</div>
+                </a>
+                <div class="project-card-icons">
+                    <a href="" target="_blank" rel="noopener noreferrer"><img id="project-open-new-icon" class="project-icon" src="../img/icons/open-in-new.svg" alt="Open Project"></a>
+                    <a href="https://github.com/derekkunkel" target="_blank" rel="noopener noreferrer"><img id="project-github-icon" class="project-icon" src="../img/icons/github-mark-white.svg" alt="Github Link"></a>
+                </div>
+                <p class="project-description">Placeholder for the next project in The Odin Project course.</p>
+            </div>
         </div>
     </section>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
