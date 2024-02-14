@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: #ebeef3;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 }
 
 .back-link:hover {
-    filter: invert(22%) sepia(13%) saturate(6087%) hue-rotate(332deg) brightness(101%) contrast(98%);
+    filter: brightness(0%) saturate(100%) invert(27%) sepia(25%) saturate(2505%) hue-rotate(152deg) brightness(96%) contrast(92%);
 }
 
 .back-link img {
@@ -52,8 +53,8 @@ header {
     justify-content: center;
     padding: 1em;
     background: 
-    linear-gradient(#0A6072,#0A6072) top/100% calc(25%),
-    linear-gradient(to top left,transparent 50%,#0A6072 50.4%) 0 50px/120% 75%;
+    linear-gradient(#eead5a,#eead5a) top/100% calc(25%),
+    linear-gradient(to top left,transparent 50%,#eead5a 50.4%) 0 50px/120% 75%;
     background-repeat: no-repeat;
 }
 
@@ -78,7 +79,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: white;
+    background-color: #ebeef3;
     max-width: 80%;
     padding-bottom: 2em;
 }
@@ -104,26 +105,19 @@ header {
     flex-direction: column;
     padding: 1em 1em 0em;
     gap: 0.5em;
-
-    background-color: #e3b25f;
+    
+    background-color: #0A6072;
 
     /* border: solid black 2px; */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-#admin-dashboard-card {
-    background-color: #e3b25f;
-}
+/* #admin-dashboard-card {
+    background-color: #0A6072;
+} */
 
 #project-card a {
     padding: 1em 0em 0em;
-}
-
-.project-screenshot {
-    background-color: #6B9FAA;
-    width: auto;
-    height: 8rem;
-    border-radius: 12px;
 }
 
 .project-title {
@@ -131,12 +125,12 @@ header {
     font-weight: 400;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: white;
     padding-top: 0.5em;
 }
 
 .project-title:hover {
-    color: #5F63E3;
+    color: #e3b25f;
 }
 
 .project-card-icons {
@@ -155,25 +149,22 @@ header {
 }
 
 #project-github-icon:hover {
-    filter: brightness(0%) saturate(100%) invert(39%) sepia(60%) saturate(5035%) hue-rotate(228deg) brightness(98%) contrast(82%);    transition: 0.1s, 0.1s;
+    filter: brightness(0%) saturate(100%) invert(66%) sepia(86%) saturate(322%) hue-rotate(344deg) brightness(97%) contrast(93%);
 }
 
-#project-github-icon {
+#project-open-new-icon {
     filter: invert();
 }
 
 #project-open-new-icon:hover {
-    filter: invert(39%) sepia(60%) saturate(5035%) hue-rotate(228deg) brightness(98%) contrast(82%);    transition: 0.1s, 0.1s;
+    filter: brightness(0%) saturate(100%) invert(66%) sepia(86%) saturate(322%) hue-rotate(344deg) brightness(97%) contrast(93%);
 }
 
 .project-description {
     margin-top: 0.5em;
-    color: black;
+    color: white;
     font-size: 1em;
-    font-weight: bold;
     line-height: 1.4em;
-    text-align:justify;
-    word-spacing:-2px;
     padding: 0em 1em 0em;
 }
 
@@ -240,7 +231,6 @@ header {
 
     .project-description {
         font-size: 1.1em;
-        font-weight: 800;
         padding: 0em 1.5em 0em;
     }
 }
