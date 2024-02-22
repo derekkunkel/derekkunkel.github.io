@@ -66,14 +66,14 @@ header {
 
 #project-screenshot {
     min-width: 15em;
-    max-width: 25em;
+    max-width: 20em;
     box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
     border-radius: 8px;
 }
 
 .header-container h1 {
     font-family: 'Playfair Display';
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 800;
 }
 
@@ -126,9 +126,9 @@ header {
 .project-description-container p {
     display: flex;
     justify-content: center;
-    text-align: justify;
+    text-align: left;
     font-size: 1em;
-    padding: 0 3em;
+    padding: 0 2em;
     line-height: 1.3em;
 }
 
@@ -161,6 +161,7 @@ header {
     .back-link {
         display: none;
     }
+
 
     .project-description-container p {
         display: flex;

@@ -407,11 +407,6 @@ header {
         max-width: 60em;
     }
 
-    .project-screenshot {
-        max-height: 250px;
-        /* width: auto; */
-    }
-
     .project-description {
         min-height: 10em;
     }

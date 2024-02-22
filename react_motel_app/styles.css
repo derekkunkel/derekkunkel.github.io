@@ -66,8 +66,8 @@ header {
 
 #project-screenshot {
     position: relative;
-    min-width: 200px;
-    max-width: 22em;
+    min-width: 150px;
+    max-width: 20em;
     box-shadow: 0.1em 0.2em 0.3em rgba(77, 77, 77, 0.6);
     border-radius: 8px;
     margin-top: 1.5em;
@@ -146,9 +146,10 @@ header {
     .project p {
         display: grid;
         grid-template-columns: 1fr;
-        justify-items: center;
-        padding: 0 4em;
-        font-size: 1.15em;
+        /* justify-items: center; */
+        text-align: left;
+        padding: 0 2em;
+        font-size: 1.0em;
         margin-left: auto;
         margin-right: auto;
         max-width: 30em;
